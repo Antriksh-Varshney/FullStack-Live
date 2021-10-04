@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 8vh;
+            width: 100%;
+            /* background-color: blue; */
+        }
+        .table{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .table table{
+           width: 60%;
+           height: 80vh;
+           /* border: 2px solid black; */
+        }
+
+        .table table thead tr.heading{
+            font-size: 40px;
+            color: blueviolet;
+            background-color: rgb(191, 228, 230);
+        }
+
+        .table table tbody tr.price{
+            font-size: 30px;
+            color: rgb(43, 136, 43);
+        }
+
+        .table table tbody tr td i.fa-check{
+            color: green;
+            font-size: 20px;
+        }
+        .table table tbody tr td i.fa-times{
+            color: red;
+            font-size: 20px;
+        }
+        .table table tbody tr td{
+            text-align: center;
+        }
+        .color{
+            background-color: rgb(167, 229, 231);
+        }
+        .table table tbody tr td a{
+            text-decoration: none;
+            color: white;
+            background-color: purple;
+            padding: 10px 25px;
+            border-radius: 10px;
+        }
+        .table table tbody tr td a:hover{
+            color: yellow;
+        }
+
+        tbody>tr.color>:nth-child(1){ 
+            background-color: rgba(201, 169, 190, 0.527);
+}
+        tbody>tr.color>:nth-child(2){ 
+            background-color: rgba(183, 161, 196, 0.541);
+}
+        tbody>tr.color>:nth-child(3){ 
+            background-color: rgba(183, 161, 196, 0.541);
+}
+        tbody>tr.color>:nth-child(4){ 
+            background-color: rgba(183, 161, 196, 0.541);;
+}
+        
+
+    </style>
+
+    
+  </head>
+  <body>
+    <div class="head">
+      <h1>SELECT YOUR PLAN</h1>
+    </div>
+
+    <div class="table">
+      <table>
+        <thead>
+          <tr class="heading">
+            <th><i class="fas fa-building"></i> Basic</th>
+            <th><i class="fas fa-ring"></i> Plus</th>
+            <th><i class="fas fa-envelope-square"></i> Deluxe</th>
+            <th><i class="fas fa-palette"></i> Pro</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="price">
+            <td>Rs 500/-</td>
+            <td>Rs 1500/-</td>
+            <td>Rs 2500/-</td>
+            <td>Rs 3500/-</td>
+          </tr>
+
+          <tr class="color">
+            <td>59 Pages</td>
+            <td>75 Pages</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+          </tr>
+
+          <tr>
+            <td>3 users</td>
+            <td>5 users</td>
+            <td>10 users</td>
+            <td>Unlimited</td>
+          </tr>
+
+          <tr class="color">
+            <td>10 Sites</td>
+            <td>25 Sites</td>
+            <td>100 Sites</td>
+            <td>Unlimited</td>
+          </tr>
+
+          <tr>
+            <td>50 MB</td>
+            <td>250 MB</td>
+            <td>1 GB</td>
+            <td>5 GB</td>
+          </tr>
+
+          <tr class="color">
+            <td>Included</td>
+            <td>Included</td>
+            <td>Included</td>
+            <td>Included</td>
+          </tr>
+
+          <tr>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+          </tr>
+
+          <tr class="color">
+            <td><i class="fa fa-times"></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+          </tr>
+
+          <tr>
+            <td><i class="fa fa-times"></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+          </tr>
+
+          <tr class="color">
+            <td><i class="fa fa-times"></i></td>
+            <td><i class="fa fa-times"></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+          </tr>
+
+          <tr>
+            <td><i class="fa fa-times"></i></td>
+            <td><i class="fa fa-times"></i></td>
+            <td><i class="fa fa-times"></i></td>
+            <td><i class="fa fa-check"></i></td>
+          </tr>
+
+          <tr class="color">
+            <td><a href="#">Sign Up</a></td>
+            <td><a href="#">Sign Up</a></td>
+            <td><a href="#">Sign Up</a></td>
+            <td><a href="#">Sign Up</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

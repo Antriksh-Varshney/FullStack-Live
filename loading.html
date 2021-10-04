@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 100%;
+            height: 100vh;n
+            justify-content: center;
+            align-items: center;
+            display: flex;
+             flex-direction: row; 
+        }
+          .dot1,.dot2,.dot3,.dot4,.dot5
+            {
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                color: blueviolet;
+                background-color: blueviolet;
+                display: inline-block;
+                margin-left: 20px;
+            }
+            .dot1
+            {
+                animation: dot1 2s linear infinite;
+        
+            }
+            .dot2
+            {
+                animation: dot1 2s linear infinite;
+                animation-delay: 0.2s;
+            }
+            .dot3
+            {
+                animation: dot1 2s linear infinite;
+                animation-delay: 0.4s;
+            }
+            .dot4
+            {
+                animation: dot1 2s linear infinite;
+                animation-delay: 0.6s;
+            }
+            .dot5
+            {
+                animation: dot1 2s linear infinite;
+                animation-delay: 0.8s;
+            }
+            @keyframes dot1 {
+                0%
+                {
+                    transform: scale(1);
+                    background-color: blue;
+                    opacity: 1;
+                }
+                50%
+                {
+                    transform: scale(0.3);
+                    background-color: skyblue;
+                    opacity: 0.3;
+                }
+                0%
+                {
+                    transform: scale(1);
+                    background-color: blue;
+                    opacity: 1;
+                }
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dot1">
+        </div>
+        <div class="dot2">
+        </div>
+        <div class="dot3"></div>
+        <div class="dot4">
+        </div>
+        <div class="dot5"></div>
+    </div>
+</body>
+</html>
