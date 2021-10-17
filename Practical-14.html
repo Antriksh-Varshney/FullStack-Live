@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-14</title>
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;
+        }
+        body{
+            background-color: grey;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+        }
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 50px;
+           
+        }
+        h2{
+            margin: 0 50px;
+            font-size: 50px;
+        }
+        button{
+            width: 70px;
+            height: 50px;
+            outline: none;
+            border-style: none;
+            font-size: 50px;
+            background-color: yellow;
+            color: white;
+            box-shadow: 8px 8px 20px #00000027,-8px -8px, 20px #969393;
+           
+        }
+        button:hover{
+            background-color: rgb(233, 233, 143);
+            color: whitesmoke;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Counter</p>
+        <div class="card">
+            <button onclick="decrement()">-</button>
+            <h2 id="root"></h2>
+            <button onclick="increment()">+</button>
+        </div>
+
+    </div>
+    <script>
+        var data = 0;
+        document.getElementById("root").innerText=data;
+        function decrement(){
+            if(data == 0){
+                return;
+            }
+            data = data-1;
+            document.getElementById("root").innerText=data;
+        }
+        function increment(){
+            data = data+1;
+            document.getElementById("root").innerText=data;
+        }
+    </script>
+</body>
+</html>
